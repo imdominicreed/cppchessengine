@@ -3,6 +3,11 @@
 #include "board_utils.hpp"
 #include "look_up_moves.hpp"
 
+uint64_t knight[64];
+uint64_t king[64];
+uint64_t rook[64];
+uint64_t bishop[64];
+
 bool check_valid_knight_move(int sq, int move) {
     uint64_t m = 1ULL << sq;
     if(((col_a | col_b) & m) && (move == -17 || move == 6)) return false;
