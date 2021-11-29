@@ -1,2 +1,9 @@
 #VSCode
 .vscode
+
+#CMAKE
+build
+CMakeLists.txt
+
+#GoogleTests
+googletest
